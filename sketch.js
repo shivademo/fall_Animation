@@ -1,7 +1,8 @@
-var rain = [], drop, backgroundImage;
+var rain = [], drop, backgroundImage,backgroundImage1;
 
 function preload(){
     getbackgroundImage()
+    backgroundImage1=loadImage("morning.jpg")
   }
 
 function setup(){
@@ -18,6 +19,8 @@ function setup(){
 function draw(){
     if(backgroundImage){
         background(backgroundImage);
+      }else{
+          background(backgroundImage1);
       }
     
     for (var i = 0; i < rain.length; i++) {
